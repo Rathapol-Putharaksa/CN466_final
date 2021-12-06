@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Accelerometer</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+  <script src="edge-impulse-standalone.js"></script>
+    <script src="run-impulse.js"></script>
+<main role="main" class="container">
+  <div class="p-3 mb-2 bg-secondary" id="demo-div">
+    <a id="start_demo" class="btn btn-lg btn-success py-1" href="#" role="button">Start</a>
+
+<h4>Accelerometer</h4>
+<ul>
+  <li>X-axis: <span id="Accelerometer_x">0</span><span> m/s<sup>2</sup></span></li>
+  <li>Y-axis: <span id="Accelerometer_y">0</span><span> m/s<sup>2</sup></span></li>
+  <li>Z-axis: <span id="Accelerometer_z">0</span><span> m/s<sup>2</sup></span></li>
+  <li>test: <span id="test">0</span><span> m/s<sup>2</sup></span></li>
+</ul>
+
+
+</div>
+</main>
+<script>
+
+var accel = []
+
+function updateFieldIfNotNull(fieldName, value, precision=4){
+  if (value != null)
+  
+    document.getElementById(fieldName).innerHTML = value.toFixed(precision);
+  
+}
+function addAccel(){
+  if(accel.length<936){
+  accel.push(event.acceleration.x)
+  accel.push(event.acceleration.y)
+  accel.push(event.acceleration.z)
+  }
+  else{
+  
+    axios.post("https://cn466-a22ce-default-rtdb.firebaseio.com/.json?auth=4kIwSUooJ4uZ2oacIYLvOXFcYFObdbZpLgG9vICS", {
+    rawdata:accel
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  
+  axios.post("https://glacial-forest-32387.herokuapp.com/test", {
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+    accel = []
+  }
+  document.getElementById("test").innerHTML = accel;
+}
+
+function handleMotion(event) {
+ 
+  
+  updateFieldIfNotNull('Accelerometer_x', event.acceleration.x);
+  updateFieldIfNotNull('Accelerometer_y', event.acceleration.y);
+  updateFieldIfNotNull('Accelerometer_z', event.acceleration.z);
+  addAccel()
+}
+
+let is_running = false;
+const demoBut = document.getElementById("start_demo")
+demoBut.addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  // Request permission for iOS 13+ devices
+  if (DeviceMotionEvent &&
+    typeof DeviceMotionEvent.requestPermission === "function") {
+    DeviceMotionEvent.requestPermission();
+  }
+  
+  if (is_running){
+    
+    window.removeEventListener("devicemotion", handleMotion);
+    
+    
+    demoBut.innerHTML = "Start";
+  }else{
+    window.addEventListener("devicemotion", handleMotion);
+    
+    
+    demoBut.innerHTML = "Stop";
+  }
+  is_running = !is_running;
+
+});
+
+
+</script>
+</body>
+</html>
