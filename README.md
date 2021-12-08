@@ -48,14 +48,14 @@
 
 I use Cucumber board for change LED for value from prediction by edge_impluse
 
-[link อธิบาย arduino](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/arduino)
+[link for explain arduino](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/arduino)
   
 # WebAPI
 
 I use device motion for recieve acceleration x,y,z 
 
 
-[link อธิบาย WebAPI EdgeImpulse](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/webAPIandEdge)
+[link for explain WebAPI EdgeImpulse](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/webAPIandEdge)
 
 
 # edge_impulse 
@@ -63,21 +63,21 @@ I use device motion for recieve acceleration x,y,z
 I use edge impulse for predict status(stay,move) from acceleration x,y,z.
 
 
-[link อธิบาย WebAPI EdgeImpulse](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/webAPIandEdge)
+[link for explain WebAPI EdgeImpulse](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/webAPIandEdge)
 
 # linebot 
 
 I use linebot for check lastest status and time for status.
 
 
-[link สำหรับอธิบาย linebot LIFF](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/lineBot)
+[link for explain linebot LIFF](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/lineBot)
 
 # LIFF
 
 I use LIFF for send message to linebot.
 
 
-[link สำหรับอธิบาย linebot LIFF](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/lineBot)
+[link for explain linebot LIFF](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/lineBot)
 
 # database
 
