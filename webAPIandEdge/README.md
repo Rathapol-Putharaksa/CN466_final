@@ -19,6 +19,9 @@
 <img width="1008" alt="Screen Shot 2564-12-08 at 16 17 51" src="https://user-images.githubusercontent.com/61156321/145182134-7a9984a7-0008-4345-9bd3-4a2249d2c0e1.png">
 
 
+---
+
+
 ## WebAPI
 
 I use devicemotion in webAPI for recieve acceleration x,y,z and every 5 second Web application will send acceleration x,y,z to firebase realtime database.
