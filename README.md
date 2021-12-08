@@ -1,5 +1,13 @@
 ## CN466_final
 
+งานชิ้นนี้เป็นส่วนหนึ่งของวิชา CN466 
+
+โดยใช้ Web Applicaition เพื่อรับค่า acceleration x,y,z เพื่อนำไปตรวจสอบว่าสถานะตอนนี้ผู้ใช้กำลังอยู่ในสถานะ stay หรือ move จากนั้นไฟที่อยู่ที่ cucumber board จะเปลี่ยนสีตามสถานะ
+
+(stay:green , move:red)
+
+และสามารถใช้ linebot ในการตรวจสอบสถานะล่าสุดของผู้ใช้งาน Web Application และ เวลาทั้งหมดที่อยู่ในสถานะ stay และ move
+
 # Arduino
 
 ใช้ Cucumberเปลี่ยนสีตาม actionต่างๆ ที่ได้มาจากการpredict ของ edge_impulse
@@ -43,6 +51,15 @@
 
 
 ## CN466_final
+
+this is my final project in CN466
+
+I use Web Application for recieve acceleration x,y,z for check user status is stay or move then led in cucumber board will change by status
+
+(stay:green , move:red)
+
+and you can use linebot for check lastest status and time in status.
+
 
 # Arduino
 
