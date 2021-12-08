@@ -2,7 +2,7 @@
 
 # Arduino
 
-ใช้ Arduinoเปลี่ยนสีสำหรับ actionต่างๆ ที่ได้มาจากการpredict ของ edge_impulse
+ใช้ Cucumberเปลี่ยนสีตาม actionต่างๆ ที่ได้มาจากการpredict ของ edge_impulse
 
 [link อธิบาย arduino](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/arduino)
   
@@ -36,3 +36,52 @@
 ใช้ firebase realtime database เพื่อที่จะได้ข้อมูล ณ เวลานั้นทันที
 
 ![acel](https://user-images.githubusercontent.com/61156321/145177510-b44cd11a-1e17-453a-b3d9-f9dabeeca547.png)
+
+
+
+---
+
+
+## CN466_final
+
+# Arduino
+
+I use Cucumber board for change LED for value from prediction by edge_impluse
+
+[link อธิบาย arduino](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/arduino)
+  
+# WebAPI
+
+I use device motion for recieve acceleration x,y,z 
+
+
+[link อธิบาย WebAPI EdgeImpulse](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/webAPIandEdge)
+
+
+# edge_impulse 
+
+I use edge impulse for predict status(stay,move) from acceleration x,y,z.
+
+
+[link อธิบาย WebAPI EdgeImpulse](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/webAPIandEdge)
+
+# linebot 
+
+I use linebot for check lastest status and time for status.
+
+
+[link สำหรับอธิบาย linebot LIFF](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/lineBot)
+
+# LIFF
+
+I use LIFF for send message to linebot.
+
+
+[link สำหรับอธิบาย linebot LIFF](https://github.com/Rathapol-Putharaksa/CN466_final/tree/main/lineBot)
+
+# database
+
+ใช้ firebase realtime database เพื่อที่จะได้ข้อมูล ณ เวลานั้นทันที
+
+![acel](https://user-images.githubusercontent.com/61156321/145177510-b44cd11a-1e17-453a-b3d9-f9dabeeca547.png)
+
