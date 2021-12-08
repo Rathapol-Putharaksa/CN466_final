@@ -22,9 +22,12 @@
 
 I use cucumber board for recive red or green from mqtt
 
+
+
 When predict value from edge impulse is stay Web Application will send green to mqtt.
 
 ![green](https://user-images.githubusercontent.com/61156321/145178812-ae4433a1-3dec-40f3-942f-b25bb7462d6a.jpg)
+
 
 When predict value from edge impulse is move Web Application will send red to mqtt.
 
