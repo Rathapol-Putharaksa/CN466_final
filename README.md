@@ -1,23 +1,26 @@
-# CN466_final
+## CN466_final
 
-Arduino
-  ใช้ Arduinoเปลี่ยนสีสำหรับ actionต่างๆ ที่ได้มาจากการpredict ของ edge_impulse
+#Arduino
+
+ใช้ Arduinoเปลี่ยนสีสำหรับ actionต่างๆ ที่ได้มาจากการpredict ของ edge_impulse
   
-WebAPI
+#WebAPI
+
 ใช้ motion device สำหรับส่ง accelerometer นำไปให้ edge_impulse โดยจะส่งค่าทุกๆ 5 วินาที
 
-edge_impulse 
+#edge_impulse 
+
 ใช้ train accelerometer x,y,z สำหรับตรวจว่าอยู่ในสถานะอยู่นิ่ง หรือ ขยับ
 
-linebot 
+#linebot 
 
 ใช้ตรวจสอบ สถานะปัจจุบัน และตรวจสอบเวลาทั้งหมดที่ขยับและหยุดนิ่ง
 
-LIFF
+#LIFF
 
 ใช้ liff message เพื่อสามารถใช้line bot ได้สะดวกขึ้น
 
-database
+#database
 
 ใช้ firebase realtime database เพื่อที่จะได้ข้อมูล ณ เวลานั้นทันที
 
