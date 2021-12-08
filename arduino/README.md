@@ -1,5 +1,7 @@
-##arduino
+## arduino
+
 ใช้ cucumber board 
+
 รับค่า red หรือ green ผ่าน mqtt
 
 เมื่อค่าจาก edge impulse ถูกpredictออกมาว่าเป็น stay จะส่ง green ไปที่ mqtt
